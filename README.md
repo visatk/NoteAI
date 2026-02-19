@@ -1,16 +1,33 @@
-# myapp
+# Professional Notes
 
-A new Flutter project.
+A high-level professional Personal Note App for Android, built with Flutter.
+
+## Features
+
+-   **Beautiful Design**: Material 3 design with a clean, masonry layout.
+-   **Rich Note Management**: Create, edit, and delete notes.
+-   **Local Persistence**: Notes are stored securely using SQLite (`sqflite`).
+-   **Search**: Fast and efficient search functionality.
+-   **Dark Mode**: Automatic dark mode support based on system settings.
+-   **Custom Typography**: Uses professional fonts (Lato) via Google Fonts.
+
+## Architecture
+
+-   **State Management**: `Provider` (ChangeNotifier).
+-   **Database**: `sqflite` with Singleton `DatabaseHelper`.
+-   **Models**: Immutable `Note` model.
+-   **UI**: Modular widgets and screens.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1.  Clone the repository.
+2.  Run `flutter pub get`.
+3.  Run `flutter run`.
 
-A few resources to get you started if this is your first Flutter project:
+## Testing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Run unit and widget tests:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter test
+```
